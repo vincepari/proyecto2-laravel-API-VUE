@@ -7,3 +7,36 @@ Content-Type: application/json
     "email": "vince@mail.com",
     "password": "vince123456"
 }
+
+###login
+
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "vince@mail.com",
+    "password": "vince123456"
+}
+
+###login
+
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "vince@mail.com",
+    "password": "vince123456"
+}
+
+###perfil
+
+GET  http://127.0.0.1:8000/api/v1/auth/perfil
+Accept: application/json
+Authorization: Bearer 16|WONXb89hm9rQ1IBwl1dU5I6s6V4ijQSPqetASDTV031e8ea4
+###Salir
+
+POST   http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 15|uWQeMr4thAfjX8150gDNmzJjnspOkr32JrZHbSLl344ab7bb
