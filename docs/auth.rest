@@ -3,9 +3,9 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "name": "vince",
-    "email": "vince@mail.com",
-    "password": "vince123456"
+    "name": "admin",
+    "email": "admin@mail.com",
+    "password": "123456"
 }
 
 ###login
@@ -15,8 +15,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "email": "vince@mail.com",
-    "password": "vince123456"
+    "email": "admin@mail.com",
+    "password": "123456"
 }
 
 ###login
@@ -26,8 +26,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "email": "vince@mail.com",
-    "password": "vince123456"
+    "email": "admin@mail.com",
+    "password": "123456"
 }
 
 ###perfil
