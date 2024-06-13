@@ -20,6 +20,8 @@
 <script setup>
 import {ref} from "vue"
 import * as authService from "../../services/auth.service"
+import { useRouter } from "vue-router";
+const router = useRouter()
  //variable
         const titulo = ref ("Otro Tilulo 23");
         const descripcion ="Otra descripcion2";
@@ -31,7 +33,9 @@ import * as authService from "../../services/auth.service"
      const {data } = await authService.login(datos.value)
       console.log(data)
       token.value = data
-      localStorage.setItem("access_token", data.access_token)
+      localStorage.setItem("access_token", data.access_token);
+
+      router.push("/Perfil")
     }
 </script>
 

@@ -1,13 +1,18 @@
-import axios from "./axios-interceptor";
+import {http} from "./axios-interceptor";
 
 export function login(datos) {
-    return axios.post("/v1/auth/login", datos);
+    return http().post("/v1/auth/login", datos);
 }
 
 export function registro(datos) {
-    return axios.post("/v1/auth/register", datos);
+    return http().post("/v1/auth/register", datos);
 }
 
 export function  obtenerPerfil(){
-    return axios.get("/v1/auth/Profile");
+    return http().get("/v1/auth/profile");
+
+}
+
+export function  obtenerSalir(){
+    return http()("/v1/auth/logout");
 }

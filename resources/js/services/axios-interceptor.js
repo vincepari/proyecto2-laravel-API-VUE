@@ -2,12 +2,12 @@ import axios from 'axios'
 
 const urlbase = "http://127.0.0.1:8000/api"
 
-const token = localStorage.getItem("access_token")
-
+export const  http = () => {
+    const token = localStorage.getItem("access_token")
 const axiosInstance = axios.create({
     baseURL: urlbase,
     timeout: 30000,
-    header:{
+    headers:{
         Authorizacion: "Bearer" + token
     }
 });
@@ -24,5 +24,5 @@ axiosInstance.interceptors.response.use(
         return Promise.reject(error);
     }
 );
-
-export default axiosInstance;
+return axiosInstance;
+}
